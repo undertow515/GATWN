@@ -7,13 +7,13 @@ GraphAttention WaveNet
 
 
 ## Requirements
-torch
-torch_geometric
-numpy
-pandas
-pyyaml
-python >= 3.11
-tqdm
+- torch
+- torch_geometric
+- numpy
+- pandas
+- pyyaml
+- python >= 3.11
+- tqdm
 
 ## Recommendations
 The example code was tested on an RTX-4060 TI 8GB GPU. It is recommended to set up a GPU environment with CUDA installed for optimal performance.
