@@ -1,0 +1,46 @@
+data:
+  end_date: '2013-12-31'
+  eval_end: '2013-12-31'
+  eval_start: '2008-01-01'
+  start_date: '1990-01-01'
+  train_end: '2007-12-31'
+  train_start: '1990-01-01'
+  window_size: 21
+eval:
+  batch_size: 64
+  val_gauge_ids: 
+  - '01052500'
+  window_size: 21
+logging:
+  checkpoint_dir: ./checkpoints
+  save_freq: 5
+model:
+  device: cuda:0
+  dilation_channels: 16
+  dilations:
+  - 1
+  - 2
+  - 4
+  - 8
+  dropout: 0.3
+  dynamic_channels: 7
+  end_channels: 512
+  out_channels: 1
+  out_timesteps: 7
+  residual_channels: 16
+  skip_channels: 256
+  static_channels: 15
+root:
+  data_dir: ./data/
+  preprocessed_dir: ./data/preprocessed/
+  project_name: test2
+train:
+  batch_size: 256
+  epochs: 30
+  learning_rate: 0.001
+  train_gauge_ids:
+  - '01052500'
+  window_size: 21
+  patience: 10
+  use_only_loss_obs: false
+  use_only_weather: false
