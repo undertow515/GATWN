@@ -1,9 +1,9 @@
 # GATWN
-GraphAttention WaveNet
+Graph Attention WaveNet
 
 ## Project Overview
 
-
+![alt text](src/discharge_animation.gif)
 
 
 ## Requirements
